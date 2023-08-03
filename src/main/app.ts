@@ -42,6 +42,12 @@ app.on('window-all-closed', () => {
   }
 });
 
+require('update-electron-app')({
+  repo: 'https://github.com/thesourabh1995/electronjs-sample-app.git',
+  updateInterval: '5 minutes',
+  logger: require('electron-log')
+})
+
 /**
  * In this file you can include the rest of your app's specific main process code.
  * You can also put them in separate files and import them here.
