@@ -50,7 +50,7 @@ const Application: React.FC = () => {
     <div id='erwt'>
       <div className='header'>
         <div className='main-heading'>
-          <h1 className='themed'>Demo App</h1>
+          <h1 className='themed'>Demo App :: v1</h1>
         </div>
         <div className='versions'>
           <GalleryCover/>

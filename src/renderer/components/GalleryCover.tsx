@@ -12,7 +12,7 @@ interface Photo {
 
 const GalleryCover : React.FC = () => {
     const [photos, setPhotos] = useState<Photo[]>([]);
-    const [loading, setLoading] = useState<boolean>(true);
+    // const [loading, setLoading] = useState<boolean>(true);
   
     useEffect(() => {
       // Fetch data from the API
@@ -21,11 +21,11 @@ const GalleryCover : React.FC = () => {
         .then((response) => {
           console.log("this is api all :: ", response);
           setPhotos(response.data);
-          setLoading(false);
+          // setLoading(false);
         })
         .catch((error) => {
           console.log(error);
-          setLoading(false);
+          // setLoading(false);
         });
     }, []);
   
